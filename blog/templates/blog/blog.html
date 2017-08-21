@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | Top 5 website</title>
+	
+    <link href="{% static 'C:/Users/User/Desktop/django_afif/TMRND/personal/static/personal/css/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'C:/Users/User/Desktop/django_afif/TMRND/personal/static/personal/css/css/font-awesome.min.css' %}" rel="stylesheet">
+	<link href="{% static 'C:/Users/User/Desktop/django_afif/TMRND/personal/static/personal/css/css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'C:/Users/User/Desktop/django_afif/TMRND/personal/static/personal/css/css/lightbox.css' %}" rel="stylesheet">
+	<link href="{% static 'C:/Users/User/Desktop/django_afif/TMRND/personal/static/personal/css/css/main.css' %}" rel="stylesheet">
+	<link href="{% static 'C:/Users/User/Desktop/django_afif/TMRND/personal/static/personal/css/css/responsive.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'personal/css/table.css' %}" type = "text/css"/>	
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<header id="header">      
+        
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" >
+                    	<h1><img src="{% static 'C:/Users/User/Desktop/django_afif/TMRND/personal/static/personal/img/logo3.png' %}" alt="logo" width="80" height="60">
+						<img src="" alt="Top 5 Websites" width="80" height="60"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="dropdown"><a href="#">Pages</a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="coming-soon.html">Coming Soon</a></li>
+                            </ul>
+                        </li>                  
+                        
+                        <li class="dropdown"><a href="portfolio.html">Portfolio </a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="portfolio.html">Coming Soon</a></li>
+                                
+                            </ul>
+                        </li>                         
+                                    
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+	{% block content %}
+
+<head>
+<style>
+	table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 50%;
+	}
+
+	td, th {
+		border: 1px solid #dddddd;
+		text-align: center;
+		padding: 8px;
+	}
+
+	tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+	
+	
+</style>
+</head>
+
+<link href="{% static 'C:/Users/User/Desktop/django_afif/TMRND/personal/static/personal/css/select.css' %}" rel="stylesheet">
+		
+<div class="row">
+		  <div class="col-sm-13" >
+
+<div class="well bs-sidebar" id="sidebar"  style="height:50px">
+			 
+				
+			<ul class="nav nav-tabs nav-justified">
+				  <li class="nav-item">
+					<a class="nav-link active" href='#'>Date:2019-01-05</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href='#'>Date:2013-01-06</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href='#'>Date:2018-03-08</a>
+				  </li>
+				  
+			</ul>
+			  
+			  
+			  
+			</div> 
+			</div>
+			</div>
+<body>
+
+	<table>
+
+		  
+	<thead>
+		
+		  <tr>
+			<th>Date</th>
+			<th>Website</th>
+			<th>Visitor</th>
+		  </tr>
+	</thead>
+
+	  <tr>
+		 {% for post in object_list %}
+			<td>{{ post.date }}</td>
+			<td>{{post.website}}</td>
+			<td>{{post.visitor}}</td>
+		  </tr>
+		  {% endfor %}
+	 
+	</table>
+
+</body>
+
+{% endblock %}
+  
+    <!--/#home-slider-->
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <img src="{% static 'C:/Users/User/Desktop/django_afif/TMRND/personal/static/personal/img/home/icon1.png' %}" alt="">
+                        </div>
+                        <h2>Most used search engine</h2>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <img src="{% static 'C:/Users/User/Desktop/django_afif/TMRND/personal/static/personal/img/home/icon2.png' %}" alt="">
+                        </div>
+                        <h2>Most popular news website</h2>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="{% static 'C:/Users/User/Desktop/django_afif/TMRND/personal/static/personal/img/home/icon3.png' %}" alt="">
+                        </div>
+                        <h2>Most popular sports website</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#services-->
+
+    <!--/#footer-->
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+</body>
+</html>
