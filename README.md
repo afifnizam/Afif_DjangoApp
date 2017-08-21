@@ -4,7 +4,7 @@ To run the blog app:
 1.open command prompt in the project directory <br />
 2.run-> pip install django <br />
 3. initiate the server -> <your python path> manage.py runserver <br />
-                         <e.g python34/python manage.py runserver> <br />
+                         <e.g c:/python34/python manage.py runserver> <br />
 4.Go to the following url in order to view blog -> http://127.0.0.1:8000/ <br />
 
 5.Go to the following url in order to view the django admin ; where all the data are stored -> http://127.0.0.1:8000/ <br />
