@@ -8,6 +8,7 @@ To run the blog app:
 <br />
 3. initiate the server -> <your python path> manage.py runserver <br />
                          <e.g c:/python34/python manage.py runserver> <br />
+<br />
 4.Go to the following url in order to view blog -> http://127.0.0.1:8000/ <br />
 <br />
 5.Go to the following url in order to view the django admin ; where all the data are stored -> http://127.0.0.1:8000/admin <br />
