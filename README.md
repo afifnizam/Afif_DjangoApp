@@ -11,6 +11,6 @@ To run the blog app:
 
 Reference : https://www.youtube.com/playlist?list=PLQVvvaa0QuDeA05ZouE4OzDYLHY-XH-Nd <br />
 
-The page should look like this :https://scontent.fkul8-1.fna.fbcdn.net/v/t35.0-12/21017690_1677896845555312_1373061735_o.png?oh=1fec62b36409cf2a31928cd52f389cf3&oe=599E14BD <br />
+The page should look like this :https://scontent-kut2-1.xx.fbcdn.net/v/t35.0-12/21035336_1678170138861316_2076058644_o.png?oh=82ab8f5a8dd2fea92cfbe57f37f51cc9&oe=599D9A06 <br />
 
                          
